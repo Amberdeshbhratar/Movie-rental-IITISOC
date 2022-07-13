@@ -22,8 +22,7 @@ width: 100%;
 }
 .brands {
   display: flex;
- 
-  
+ overflow-x: auto;
   
   color: white;
   height:100px;
@@ -60,7 +59,8 @@ width: 100%;
   /* background-color: #212529; */
 }
 .movies img {
-  width: 15%;
+width : 20%;
+min-width: 100px;
   border: 2px solid black;
   margin: 10px;
   border-radius: 10px;
