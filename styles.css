@@ -1,12 +1,17 @@
 body .navbar{
-    color: white;
-    text-decoration: none;
-    padding: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
 }
+::-webkit-scrollbar {
+display: none;
+}
+
+
 
 body {
   /* background-color: #212529; */
- color: white;
+  color: white;
   padding-left: 2%;
   padding-right: 2%;
   background: linear-gradient(to bottom , rgba(0,0,0,0), #151515),#212529;
@@ -22,53 +27,88 @@ width: 100%;
 }
 .brands {
   display: flex;
- overflow-x: auto;
-  
+  overflow-x: auto;
   color: white;
   height:100px;
-
 }
 .brand {
-    padding: 0px 30px 0px 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .brands img{
   height: 90px;
-  
   padding: 10px;
-
   border-radius: 4px;
   border-radius: 20%;
 }
 
 .des {
-  
   margin-bottom: 0px;
 }
 .des p {
   margin-bottom: 0px;
 }
-.movies {
-  padding: 5px;
-  width : 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: flexbox;
-
-
-  /* background-color: #212529; */
+.movie-container{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 2rem;
+  margin-top: 1rem; 
 }
-.movies img {
-width : 20%;
-min-width: 100px;
-  border: 2px solid black;
-  margin: 10px;
-  border-radius: 10px;
+.box{
+  /* position: absolute; */
+}
+.box .box-img{
+  width: 100%;
+  height: 330px;
+}
+.box .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .box-img img:hover{
+  transform: translateY(30px);
+  transition: 0.2s all linear;
+  opacity: 0.5;
   
-
 }
-.movies img:hover {
-  transform: scale(1.2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        
+.box:hover{
+  cursor: grab;
+}
+.box:active{
+  cursor: grabbing;
+}
+.box:hover .left-menu-icon{
+  opacity: 1;
+}
+.box:hover .movie-list-item-desc{
+  opacity: 1;
+}
+
+/* .left-menu-icon{
+  padding: 10px;
+  font-size: 54px;
+  position: relative;
+  text-align: center;
+  top: 150px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+} */
+.movie-list-item-desc {
+  background-color: black; 
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  /* display: none; */
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+footer {
+  background-color: black;
+  margin: 0px;
 }
