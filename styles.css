@@ -55,6 +55,59 @@ width: 100%;
 .des p {
   margin-bottom: 0px;
 }
+.movie-container{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 2rem;
+  margin-top: 1rem; 
+}
+
+.box .box-img{
+  width: 100%;
+  height: 330px;
+}
+.box .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .box-img img:hover{
+  transform: translateY(30px);
+  transition: 0.2s all linear;
+  opacity: 0.5;
+  
+}
+.box:hover{
+  cursor: grab;
+}
+.box:active{
+  cursor: grabbing;
+}
+.box:hover .left-menu-icon{
+  opacity: 1;
+}
+.box:hover .movie-list-item-desc{
+  opacity: 1;
+}
+
+
+.movie-list-item-desc {
+  background-color: black; 
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  /* display: none; */
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+footer {
+  background-color: black;
+  margin: 0px;
+}
 .movies {
   padding: 5px;
   width : 100%;
@@ -71,7 +124,7 @@ min-width: 100px;
   border: 2px solid black;
   margin: 10px;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 1;
 
 }
 .movies img:hover {
