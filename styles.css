@@ -1,18 +1,20 @@
 body .navbar{
-    color: white;
-    text-decoration: none;
-    padding: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
 }
 ::-webkit-scrollbar {
-  display: none;
+display: none;
 }
+
+
+
 body {
-  /* background-color: #212529; */
- color: white;
+  
+  color: white;
   padding-left: 2%;
   padding-right: 2%;
- 
-  
+  background: #212529;
 }
 .sticky {
   position: -webkit-sticky;
@@ -25,36 +27,33 @@ width: 100%;
 }
 .brands {
   display: flex;
- overflow-x: auto;
-  
+  overflow-x: auto;
   color: white;
   height:100px;
-
-}
-.sidebar {
-  width: 100%;
-
 }
 .brand {
-    padding: 0px 30px 0px 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .brands img{
   height: 90px;
-  
   padding: 10px;
-
   border-radius: 4px;
   border-radius: 20%;
 }
 
 .des {
-  
   margin-bottom: 0px;
 }
 .des p {
   margin-bottom: 0px;
 }
+
+.content-container {
+  margin-left: 50px;
+}
+
+
 .movie-container{
   max-width: 1200px;
   margin-right: auto;
@@ -94,43 +93,17 @@ width: 100%;
 }
 
 
-.movie-list-item-desc {
+.box p {
   background-color: black; 
   padding: 10px;
   font-size: 14px;
   position: absolute;
+
+  
   /* display: none; */
   width: 230px;
   opacity: 0;
   transition: 1s all ease-in-out;
-}
-footer {
-  background-color: black;
-  margin: 0px;
-}
-.movies {
-  padding: 5px;
-  width : 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: flexbox;
-
-
-  /* background-color: #212529; */
-}
-.movies img {
-width : 20%;
-min-width: 100px;
-  border: 2px solid black;
-  margin: 10px;
-  border-radius: 10px;
-  opacity: 1;
-
-}
-.movies img:hover {
-  transform: scale(1.2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-       opacity: 1.5; 
 }
 footer {
   background-color: black;
@@ -180,4 +153,88 @@ div h4{
   width: 20%;
   padding: 5px;
   border-radius: 10px;
+}
+
+.carouselExampleInterval{
+  margin: 20px;
+  height: 700px;
+  padding: 50px;
+}
+.carousel-item {
+  
+  height: 700px;
+  background: linear-gradient(to left ,rgba(0,0,0,0) , #212529), url('posters/featured\ dr\ strange.jpg');
+  width: 100%;
+  padding: 50px;
+
+}
+
+#thor{
+  
+  
+  background: linear-gradient(to left ,rgba(0,0,0,0) , #212529), url('posters/featured\ thor\ ragnarok.jpg');
+  background-size: 100%;
+  background-position-y: bottom;
+}
+#kgf2{
+  background: linear-gradient(to left ,rgba(0,0,0,0) , #212529), url('posters/featured\ KGF2.jpg');
+  background-size: 100%;
+  background-position-y: center;
+
+}
+#drstrange{
+  
+  height: 700px;
+  background: linear-gradient(to left ,rgba(0,0,0,0) , #212529), url('posters/featured\ dr\ strange.jpg');
+  width: 100%;
+  padding: 50px;
+
+}
+
+.carousel-control-prev{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  color: white;
+}
+.carousel-control-next{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  color: white;
+}
+
+
+
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 50px 0;
+  /* display: inline-block; */
+}
+.featured-button {
+  position: absolute;
+  bottom: 150px;
+  left: 5%;
+  background-color: #ff3c00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  
+}
+.featured-button:hover{
+  
+  opacity: 0.2;
+  cursor: grab;
+  transform: scale(1.1);
+}
+.featured-button:active{
+  cursor: grabbing;
+}
+.carousel-inner{
+  height: 700px;
 }
