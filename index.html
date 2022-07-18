@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Movie rental system</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  
+  </head>
   <body>
+    
     <div class="sticky">
     <nav class="navbar navbar-expand-lg  " >
         <div class="container-fluid">
@@ -87,7 +90,41 @@
           <img src="	https://images.justwatch.com/icon/210188316/s100/icon.webp        " alt="">
           <img src="https://images.justwatch.com/icon/243059301/s100/icon.webp" alt="">
       </div>
-      <section class="movies">
+      <br>
+      <h1 class="heading">Featured Movies</h1>
+      <br>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000" id="kgf2" >
+            <h2>KGF 2 </h2>
+            <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor modi illo sit vero debitis. Consectetur id incidunt deserunt optio modi!</p>
+            <button class="featured-button" > <i class=" fas fa-play">   WATCH NOW</i></button>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000" id="drstrange">
+            <h2>Doctor Strange</h2>
+            <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident non deleniti recusandae. Nemo, impedit. Rerum nisi magnam facilis magni!</p>
+            <button class="featured-button" ><i class=" fas fa-play">    WATCH NOW</i></button>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000" id="thor">
+            <h2>Thor Ragnarok</h2>
+            <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident non deleniti recusandae. Nemo, impedit. Rerum nisi magnam facilis magni!</p>
+            <button class="featured-button" ><i class=" fas fa-play">    WATCH NOW</i></button>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <h1 class="heading">Popular Movies</h1>
+      <br>
+      <div class="movies">
         <div class="movie-container">
           
           <div class="box">
@@ -407,7 +444,7 @@
          
 
         </div>
-      </section>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
